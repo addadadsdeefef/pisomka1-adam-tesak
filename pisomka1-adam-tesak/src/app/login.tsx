@@ -1,13 +1,14 @@
 import React from 'react';
-import Layout from '../app/layout';
+import Layout from '../../components/Layout';
 
-const Login: React.FC = () => {
+const LoginPage: React.FC = () => {
   return (
     <Layout>
-      <h1>Prihlásenie</h1>
-      <p>Tu sa môžete prihlásiť (implementácia Google login neskôr).</p>
+      <h1>Login Page</h1>
+      <p>Please log in using your credentials.</p>
+      <button>Login with Google</button>
     </Layout>
   );
 };
 
-export default Login;
+export default LoginPage;

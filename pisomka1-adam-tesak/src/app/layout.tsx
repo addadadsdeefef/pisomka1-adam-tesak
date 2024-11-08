@@ -1,21 +1,20 @@
 // src/app/layout.tsx
 import React from 'react';
-import Layout from './components/layout';  // Upravené na malé 'l'
+import { ReactNode } from 'react';
 
 interface LayoutProps {
-  children: React.ReactNode;
+  children: ReactNode;
 }
 
 const RootLayout: React.FC<LayoutProps> = ({ children }) => {
   return (
     <html lang="sk">
       <body>
-        <Layout>
-          {children}
-        </Layout>
+        {children} {/* Nebude už obalovať Layout. Len predáme deti (content stránky). */}
       </body>
     </html>
   );
 };
 
 export default RootLayout;
+
